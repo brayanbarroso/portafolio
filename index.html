@@ -4,21 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Portafolio Jaume</title>
   </head>
   <body>
-    <header class="header">
-      <img src="./assets/image/LOGO.png" width="70" height="" alt="Logo" />
-      <button class="button">Curriculum</button>
-    </header>
-    <section>
-      <a href="" class="">
-        <img src="./assets/icons/icon-phone.svg" alt="" />
-      </a>
-      <a href="" class="">
-        <img src="./assets/icons/icon-important_mail.svg" alt="" />
-      </a>
-    </section>
+    <div class="wrapper">
+      <header class="header">
+        <img src="./assets/image/LOGO.png" width="70" height="" alt="Logo" />
+        <nav class="menu">
+          <ul>
+            <li>
+              <a class="is-active" href="">hola</a>
+            </li>
+            <li>
+              <a href="">proyecto</a>
+            </li>
+            <li>
+              <a href="">hablemos</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button">Curriculum</button>
+      </header>
+      <section class="hero">
+        <div class="hero-image">
+          <img src="./assets/image/user.png" width="338" height="330" alt="" />
+        </div>
+        <div class="hero-description">
+          <h1>
+            <span>¡Hola a todos!</span>
+            <span>Soy Jaumes</span>
+          </h1>
+          <p>
+            Frontend Developer que le encanta implementar diseños que inspiran y
+            atraen a las personas.
+          </p>
+          <div class="hero-social">
+            <a class="button-icon" href="tel:3117330066" class=""
+              ><img src="./assets/icons/icon-phone.svg" alt=""
+            /></a>
+            <a class="button-icon" ref="" class="">
+              <img src="./assets/icons/icon-important_mail.svg" alt="" />
+            </a>
+            <a class="button-icon" ref="" class="">
+              <img src="./assets/icons/icon-instagram.svg" alt="" />
+            </a>
+            <a class="button-icon" ref="" class="">
+              <img src="./assets/icons/icon-twitter_squared.svg" alt="" />
+            </a>
+          </div>
+          <a href="" class="button">Descargar Curriculum</a>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

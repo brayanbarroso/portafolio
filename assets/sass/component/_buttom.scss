@@ -10,11 +10,12 @@
     block-start: 13px;
     block-end: 13px;
   }
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
-}
-
-.button.is-secondary {
-  background: unset;
-  border: 2px solid var(--primary);
-  color: var(--primary);
+  .is-secondary {
+    background: unset;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+  }
 }

@@ -17,7 +17,7 @@
 
 body {
   background: var(--gradient);
-  color: var(--green);
+  color: var(--primary);
   font: var(--body1);
 }
 
@@ -31,31 +31,100 @@ body {
   padding-inline-end: 24px;
   padding-block-start: 13px;
   padding-block-end: 13px;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
 }
-
-.button.is-secondary {
+.button .is-secondary {
   background: unset;
   border: 2px solid var(--primary);
   color: var(--primary);
 }
 
+.wrapper {
+  max-inline-size: 1158px;
+  margin: auto;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+}
+
 .header {
   align-items: center;
+  block-size: 80px;
   display: flex;
   justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.menu ul a {
+  color: var(--white);
+  font: var(--button);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu ul a.is-active {
+  color: var(--primary);
 }
 
 .button-icon {
   background: var(--white);
   border: 2px solid var(--primary);
   border-radius: 4px;
+  display: inline-block;
   padding: 10px;
   text-decoration: none;
 }
-
 .button-icon img {
   vertical-align: middle;
+}
+
+.hero {
+  padding-block-start: 16px;
+}
+.hero .hero-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hero .hero-social {
+  padding-block-end: 24px;
+}
+.hero .hero-image {
+  text-align: center;
+}
+.hero h1 {
+  font: var(--headline3);
+  margin: 0;
+}
+.hero h1 span:nth-of-type(1) {
+  display: block;
+  font: var(--headline5);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    gap: 32px;
+  }
+  .hero .hero-description {
+    order: 1;
+    max-inline-size: 450px;
+  }
+  .hero .hero-image {
+    flex: 1;
+    order: 2;
+    text-align: end;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-image img {
+    block-size: 504px;
+    inline-size: 500px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
