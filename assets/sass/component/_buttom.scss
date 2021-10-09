@@ -13,9 +13,10 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  .is-secondary {
-    background: unset;
-    border: 2px solid var(--primary);
-    color: var(--primary);
-  }
+}
+
+.button.is-secundary {
+  background: unset;
+  border: 2px solid var(--primary);
+  color: var(--primary);
 }

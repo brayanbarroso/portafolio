@@ -35,7 +35,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.button .is-secondary {
+
+.button.is-secundary {
   background: unset;
   border: 2px solid var(--primary);
   color: var(--primary);
@@ -50,11 +51,17 @@ body {
 
 .header {
   align-items: center;
+  backdrop-filter: blur(10px);
   block-size: 80px;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 
+.menu {
+  display: none;
+}
 .menu ul {
   display: flex;
   gap: 40px;
@@ -70,6 +77,11 @@ body {
   color: var(--primary);
 }
 
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: block;
+  }
+}
 .button-icon {
   background: var(--white);
   border: 2px solid var(--primary);
@@ -95,6 +107,10 @@ body {
 }
 .hero .hero-image {
   text-align: center;
+}
+.hero .hero-image img {
+  block-size: auto;
+  max-inline-size: 100%;
 }
 .hero h1 {
   font: var(--headline3);
@@ -124,6 +140,47 @@ body {
   .hero-image img {
     block-size: 504px;
     inline-size: 500px;
+  }
+}
+.project {
+  padding-block-start: 80px;
+  padding-block-end: 80px;
+}
+.project .project-title {
+  align-self: flex-start;
+  background: var(--primary);
+  box-shadow: -4px 4px 0 var(--white);
+  color: var(--white);
+  font: var(--headline5);
+  padding-block-start: 4px;
+  padding-block-end: 4px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
+  text-decoration: none;
+}
+.project .project-image img {
+  max-inline-size: 100%;
+}
+.project .project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .project {
+    align-items: center;
+    display: flex;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+  }
+  .project .project-description {
+    flex: 1;
+  }
+  .project:nth-child(odd) .project-image {
+    flex: 1;
+    order: 2;
+    text-align: center;
   }
 }
 
