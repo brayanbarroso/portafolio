@@ -1,3 +1,9 @@
+.social {
+  display: flex;
+  gap: 16px;
+  padding-block-end: 24px;
+}
+
 .hero {
   padding-block-start: 16px;
 
@@ -5,10 +11,6 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-  }
-
-  .hero-social {
-    padding-block-end: 24px;
   }
 
   .hero-image {

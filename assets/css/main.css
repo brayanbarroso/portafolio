@@ -19,6 +19,7 @@ body {
   background: var(--gradient);
   color: var(--primary);
   font: var(--body1);
+  margin: 0;
 }
 
 .button {
@@ -94,6 +95,12 @@ body {
   vertical-align: middle;
 }
 
+.social {
+  display: flex;
+  gap: 16px;
+  padding-block-end: 24px;
+}
+
 .hero {
   padding-block-start: 16px;
 }
@@ -101,9 +108,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-.hero .hero-social {
-  padding-block-end: 24px;
 }
 .hero .hero-image {
   text-align: center;
@@ -181,6 +185,42 @@ body {
     flex: 1;
     order: 2;
     text-align: center;
+  }
+}
+.footer {
+  color: var(--white);
+  text-align: center;
+}
+.footer .social {
+  justify-content: center;
+  padding: 0;
+}
+.footer .footer-logo {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footer-logo {
+    display: block;
+  }
+  .footer .social {
+    order: 3;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+  }
+  .footer .footer-copyright {
+    display: flex;
+    gap: 8px;
   }
 }
 
