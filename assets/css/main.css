@@ -146,6 +146,41 @@ body {
     inline-size: 500px;
   }
 }
+.coment {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-inline-size: 992px;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+}
+.coment p {
+  font: var(--headline5);
+  text-align: center;
+}
+.coment p:first-child {
+  font-weight: 400;
+}
+.coment .down {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .coment {
+    padding-block-start: 100px;
+    padding-block-end: 100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .coment {
+    padding-block-start: 200px;
+    padding-block-end: 200px;
+  }
+  .coment p:first-child {
+    font: var(--headline4);
+    font-weight: 300;
+  }
+}
 .project {
   padding-block-start: 80px;
   padding-block-end: 80px;
@@ -185,6 +220,38 @@ body {
     flex: 1;
     order: 2;
     text-align: center;
+  }
+}
+.testimony {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(39.7657px);
+  border-radius: 24px;
+  padding: 24px;
+}
+.testimony .testimony-user {
+  text-align: center;
+}
+.testimony .testimony-description {
+  font-weight: bold;
+}
+.testimony .testimony-description p:last-child {
+  font: var(--body2);
+}
+
+@media only screen and (min-width: 768px) {
+  .testimony {
+    padding: 80px;
+  }
+  .testimony .testimony-user img {
+    block-size: 80px;
+    inline-size: 80px;
+  }
+  .testimony .testimony-description {
+    font: var(--headline5);
+    text-align: center;
+  }
+  .testimony .testimony-description p:last-child {
+    font: var(--body2);
   }
 }
 .footer {

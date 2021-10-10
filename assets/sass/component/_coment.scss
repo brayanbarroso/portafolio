@@ -1,0 +1,40 @@
+.coment {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-inline-size: 992px;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+
+  p {
+    font: var(--headline5);
+    text-align: center;
+
+    &:first-child {
+      font-weight: 400;
+    }
+  }
+
+  .down {
+    text-align: center;
+  }
+}
+
+@media only screen and(min-width:768px) {
+  .coment {
+    padding-block-start: 100px;
+    padding-block-end: 100px;
+  }
+}
+
+@media only screen and(min-width:1024px) {
+  .coment {
+    padding-block-start: 200px;
+    padding-block-end: 200px;
+
+    p:first-child {
+      font: var(--headline4);
+      font-weight: 300;
+    }
+  }
+}
