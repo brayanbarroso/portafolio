@@ -1,7 +1,6 @@
 .testimony {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(39.7657px);
-
   border-radius: 24px;
   padding: 24px;
 
@@ -14,6 +13,7 @@
 
     p:last-child {
       font: var(--body2);
+      opacity: 50%;
     }
   }
 }
@@ -32,7 +32,19 @@
       text-align: center;
 
       p:last-child {
-        font: var(--body2);
+        font: var(--body1);
+      }
+    }
+  }
+}
+
+@media only screen and(min-width:1024px) {
+  .testimony {
+    .testimony-description {
+      font: var(--headline4);
+
+      p:last-child {
+        font: var(--headline5);
       }
     }
   }

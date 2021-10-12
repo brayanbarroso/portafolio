@@ -51,13 +51,15 @@ body {
 }
 
 .header {
-  align-items: center;
   backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+.header .header-content {
+  align-items: center;
   block-size: 80px;
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
 }
 
 .menu {
@@ -210,6 +212,7 @@ body {
   .project {
     align-items: center;
     display: flex;
+    gap: 32px;
     padding-block-start: 80px;
     padding-block-end: 80px;
   }
@@ -236,6 +239,7 @@ body {
 }
 .testimony .testimony-description p:last-child {
   font: var(--body2);
+  opacity: 50%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -251,7 +255,15 @@ body {
     text-align: center;
   }
   .testimony .testimony-description p:last-child {
-    font: var(--body2);
+    font: var(--body1);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .testimony .testimony-description {
+    font: var(--headline4);
+  }
+  .testimony .testimony-description p:last-child {
+    font: var(--headline5);
   }
 }
 .footer {

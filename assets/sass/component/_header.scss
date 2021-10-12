@@ -1,9 +1,11 @@
 .header {
-  align-items: center;
   backdrop-filter: blur(10px);
-  block-size: 80px;
-  display: flex;
-  justify-content: space-between;
   position: sticky;
   top: 0;
+  .header-content {
+    align-items: center;
+    block-size: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
