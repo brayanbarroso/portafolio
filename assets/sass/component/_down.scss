@@ -1,0 +1,17 @@
+.img-down {
+  &:hover {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0z;
+    transform: translate(-10px, -20px);
+  }
+}
