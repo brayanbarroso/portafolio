@@ -9,9 +9,9 @@ function handleSubmit(event) {
 
   $buttonMailto.setAttribute(
     "href",
-    `mailito:brian9282@hotmail.com?subject=${form.get("name")}${form.get(
+    `mailto:${form.get("mail")}?subject=${form.get("name")}${form.get(
       "mail"
-    )}&body=${form.get("messege")}`
+    )}&body=${form.get("message")}`
   );
 
   $buttonMailto.click();
