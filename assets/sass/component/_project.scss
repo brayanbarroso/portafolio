@@ -10,6 +10,12 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    .project-button {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 }
 
@@ -23,6 +29,14 @@
 
     .project-description {
       flex: 1;
+
+      .project-button {
+        flex-direction: row;
+
+        .is-secundary {
+          order: 2;
+        }
+      }
     }
 
     &:nth-child(odd) .project-image {

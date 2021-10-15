@@ -10,10 +10,20 @@
       font: var(--button);
       text-decoration: none;
       text-transform: uppercase;
+
+      &:hover {
+        color: var(--primary);
+        transition: 0.5s all ease-in-out;
+      }
     }
 
     a.is-active {
       color: var(--primary);
+
+      &:hover {
+        transition: 0.5s all ease-in-out;
+        opacity: 0.7;
+      }
     }
   }
 }

@@ -25,13 +25,13 @@
           <nav class="menu">
             <ul>
               <li>
-                <a class="is-active" href="">hola</a>
+                <a class="is-active" href="#home">hola</a>
               </li>
               <li>
-                <a href="">proyecto</a>
+                <a href="#project">proyecto</a>
               </li>
               <li>
-                <a href="">hablemos</a>
+                <a href="#contact">hablemos</a>
               </li>
             </ul>
           </nav>
@@ -40,7 +40,7 @@
       </div>
     </header>
     <div class="wrapper">
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="hero-image">
           <img src="./assets/image/user.png" width="338" height="330" alt="" />
         </div>
@@ -54,16 +54,16 @@
             atraen a las personas.
           </p>
           <div class="social">
-            <a class="button-icon" href="tel:3117330066" class=""
-              ><img src="./assets/icons/icon-phone.svg" alt=""
+            <a class="button-icon" href="tel:3117330066">
+              <img src="./assets/icons/icon-phone.svg" alt=""
             /></a>
-            <a class="button-icon" ref="" class="">
+            <a class="button-icon" href="mailto:brayanbarroso01@gmail.com">
               <img src="./assets/icons/icon-important_mail.svg" alt="" />
             </a>
-            <a class="button-icon" ref="" class="">
+            <a class="button-icon" href="" class="">
               <img src="./assets/icons/icon-instagram.svg" alt="" />
             </a>
-            <a class="button-icon" ref="" class="">
+            <a class="button-icon" href="">
               <img src="./assets/icons/icon-twitter_squared.svg" alt="" />
             </a>
           </div>
@@ -87,7 +87,7 @@
         </a>
       </section>
 
-      <section class="project">
+      <section class="project" id="project">
         <div class="project-image">
           <img src="./assets/image/Leonidas.png" alt="" />
         </div>
@@ -97,8 +97,12 @@
             Accede a más de 120 proyectos que te ayudarán a mejorar tus
             habilidades como desarrollador Front-End.
           </p>
-          <a href="" class="button is-secundary" target="_blank">Ver Codigo</a>
-          <a href="" class="button" target="_blank">Ver Proyecto</a>
+          <div class="project-button">
+            <a href="" class="button is-secundary" target="_blank"
+              >Ver Codigo</a
+            >
+            <a href="" class="button" target="_blank">Ver Proyecto</a>
+          </div>
         </div>
       </section>
 
@@ -132,8 +136,12 @@
             personajes, cómics, programas de televisión, videos y más oficiales
             de Marvol.
           </p>
-          <a href="" class="button is-secundary" target="_blank">Ver Codigo</a>
-          <a href="" class="button" target="_blank">Ver Proyecto</a>
+          <div class="project-button">
+            <a href="" class="button is-secundary" target="_blank"
+              >Ver Codigo</a
+            >
+            <a href="" class="button" target="_blank">Ver Proyecto</a>
+          </div>
         </div>
       </section>
 
@@ -165,8 +173,12 @@
             Películas y series ilimitadas y mucho más. <br />
             Disfruta donde quieras. Cancela cuando quieras.
           </p>
-          <a href="" class="button is-secundary" target="_blank">Ver Codigo</a>
-          <a href="" class="button" target="_blank">Ver Proyecto</a>
+          <div class="project-button">
+            <a href="" class="button is-secundary" target="_blank"
+              >Ver Codigo</a
+            >
+            <a href="" class="button" target="_blank">Ver Proyecto</a>
+          </div>
         </div>
       </section>
 
@@ -188,7 +200,7 @@
         </div>
       </article>
 
-      <form action="" class="form" method="POST">
+      <form action="" class="form" method="POST" id="contact">
         <div class="form-content">
           <h2 class="title">Hablemos</h2>
           <p>
@@ -236,7 +248,9 @@
           <button type="submit" class="button">Enviar Mensaje</button>
         </div>
       </form>
-
+      <a href="mailto:brian9282@hotmai.com" id="mail-pruea" class="mail"
+        >mail</a
+      >
       <footer class="footer">
         <div class="footer-content">
           <div class="footer-logo">
@@ -266,6 +280,8 @@
             <p>Copyright 2021 - Todos los derechos reservados.</p>
           </div>
         </div>
+
+        <script src="./assets/js/main.js" type=""></script>
       </footer>
     </div>
   </body>

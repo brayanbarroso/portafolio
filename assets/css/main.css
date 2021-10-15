@@ -15,6 +15,10 @@
   --caption: 400 0.75rem/1.2135000228881836rem Poppins;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--gradient);
   color: var(--primary);
@@ -27,6 +31,7 @@ body {
   border: none;
   border-radius: 4px;
   color: var(--white);
+  cursor: pointer;
   font: var(--button);
   padding-inline-start: 24px;
   padding-inline-end: 24px;
@@ -36,11 +41,21 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+.button:hover {
+  box-shadow: 0 4px 16px rgba(83, 94, 99, 0.685);
+  opacity: 0.9;
+  transition: 0.5s all ease-in-out;
+}
 
 .button.is-secundary {
   background: unset;
   border: 2px solid var(--primary);
   color: var(--primary);
+}
+.button.is-secundary:hover {
+  background: var(--primary);
+  color: var(--white);
+  transition: 0.5s all ease-in-out;
 }
 
 .wrapper {
@@ -76,8 +91,16 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+.menu ul a:hover {
+  color: var(--primary);
+  transition: 0.5s all ease-in-out;
+}
 .menu ul a.is-active {
   color: var(--primary);
+}
+.menu ul a.is-active:hover {
+  transition: 0.5s all ease-in-out;
+  opacity: 0.7;
 }
 
 @media only screen and (min-width: 768px) {
@@ -95,6 +118,10 @@ body {
 }
 .button-icon img {
   vertical-align: middle;
+}
+.button-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .social {
@@ -209,6 +236,11 @@ body {
   flex-direction: column;
   gap: 16px;
 }
+.project .project-description .project-button {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
 @media only screen and (min-width: 768px) {
   .project {
@@ -220,6 +252,12 @@ body {
   }
   .project .project-description {
     flex: 1;
+  }
+  .project .project-description .project-button {
+    flex-direction: row;
+  }
+  .project .project-description .project-button .is-secundary {
+    order: 2;
   }
   .project:nth-child(odd) .project-image {
     flex: 1;
@@ -300,6 +338,10 @@ body {
   padding-inline-start: 16px;
   padding-block-end: 12px;
   padding-block-start: 12px;
+}
+
+.mail {
+  opacity: 0;
 }
 
 @media only screen and (min-width: 768px) {

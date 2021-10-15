@@ -3,6 +3,7 @@
   border: none;
   border-radius: 4px;
   color: var(--white);
+  cursor: pointer;
   font: var(--button);
   padding: {
     inline-start: 24px;
@@ -13,10 +14,22 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(83, 94, 99, 0.685);
+    opacity: 0.9;
+    transition: 0.5s all ease-in-out;
+  }
 }
 
 .button.is-secundary {
   background: unset;
   border: 2px solid var(--primary);
   color: var(--primary);
+
+  &:hover {
+    background: var(--primary);
+    color: var(--white);
+    transition: 0.5s all ease-in-out;
+  }
 }

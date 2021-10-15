@@ -15,6 +15,10 @@
   --caption: 400 0.75rem/1.2135000228881836rem Poppins;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--gradient);
   color: var(--primary);
