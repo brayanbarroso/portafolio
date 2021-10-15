@@ -183,11 +183,7 @@ body {
     font-weight: 300;
   }
 }
-.project {
-  padding-block-start: 80px;
-  padding-block-end: 80px;
-}
-.project .project-title {
+.title {
   align-self: flex-start;
   background: var(--primary);
   box-shadow: -4px 4px 0 var(--white);
@@ -198,6 +194,12 @@ body {
   padding-inline-start: 8px;
   padding-inline-end: 8px;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.project {
+  padding-block-start: 80px;
+  padding-block-end: 80px;
 }
 .project .project-image img {
   max-inline-size: 100%;
@@ -266,28 +268,71 @@ body {
     font: var(--headline5);
   }
 }
-.footer {
+.form {
+  margin-block-start: 80px;
+  margin-block-end: 80px;
+}
+.form .form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-inline-size: 540px;
+  margin: auto;
+}
+.form .form-content p {
+  color: var(--white);
+  margin: 0;
+}
+.form .form-content .title {
+  margin: 0;
+}
+.form .form-content label {
+  display: flex;
+  flex-direction: column;
+  font: var(--button);
+}
+.form .form-content .form-input {
+  border: 2px solid #858c94;
+  border-radius: 8px;
+  font: var(--body1);
+  margin-block-start: 8px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
+  padding-block-end: 12px;
+  padding-block-start: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .form p {
+    text-align: center;
+  }
+  .form .title {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+.footer .footer-content {
   color: var(--white);
   text-align: center;
 }
-.footer .social {
+.footer .footer-content .social {
   justify-content: center;
   padding: 0;
 }
-.footer .footer-logo {
+.footer .footer-content .footer-logo {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .footer {
+  .footer .footer-content {
     align-items: center;
     display: flex;
     justify-content: space-between;
   }
-  .footer .footer-logo {
+  .footer .footer-content .footer-logo {
     display: block;
   }
-  .footer .social {
+  .footer .footer-content .social {
     order: 3;
     padding: 0;
   }

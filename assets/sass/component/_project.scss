@@ -2,19 +2,6 @@
   padding-block-start: 80px;
   padding-block-end: 80px;
 
-  .project-title {
-    align-self: flex-start;
-    background: var(--primary);
-    box-shadow: -4px 4px 0 var(--white);
-    color: var(--white);
-    font: var(--headline5);
-    padding-block-start: 4px;
-    padding-block-end: 4px;
-    padding-inline-start: 8px;
-    padding-inline-end: 8px;
-    text-decoration: none;
-  }
-
   .project-image img {
     max-inline-size: 100%;
   }
